@@ -4,13 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11115a2e-e78f-4f1f-a754-7df4f0d3fad4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="11115a2e-e78f-4f1f-a754-7df4f0d3fad4" name="Changes" comment="class WeatherController">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/daniel/control/OpenWeatherMapProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/daniel/control/SQLiteWeatherStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/daniel/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/daniel/control/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,7 +38,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -39,6 +51,84 @@
       <option name="presentableId" value="Default" />
       <updated>1700309059228</updated>
     </task>
+    <task id="LOCAL-00001" summary="Project created">
+      <option name="closed" value="true" />
+      <created>1700309529033</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700309529033</updated>
+    </task>
+    <task id="LOCAL-00002" summary="class Location">
+      <option name="closed" value="true" />
+      <created>1700313243121</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700313243121</updated>
+    </task>
+    <task id="LOCAL-00003" summary="class Weather">
+      <option name="closed" value="true" />
+      <created>1700313925114</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700313925114</updated>
+    </task>
+    <task id="LOCAL-00004" summary="interface WeatherProvider">
+      <option name="closed" value="true" />
+      <created>1700315563123</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700315563123</updated>
+    </task>
+    <task id="LOCAL-00005" summary="interface WeatherStore">
+      <option name="closed" value="true" />
+      <created>1700315830658</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700315830658</updated>
+    </task>
+    <task id="LOCAL-00006" summary="class Main">
+      <option name="closed" value="true" />
+      <created>1700318947649</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700318947649</updated>
+    </task>
+    <task id="LOCAL-00007" summary="class WeatherController">
+      <option name="closed" value="true" />
+      <created>1700324754269</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700324754269</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Project created" />
+    <MESSAGE value="class Location" />
+    <MESSAGE value="class Weather" />
+    <MESSAGE value="interface WeatherProvider" />
+    <MESSAGE value="interface WeatherStore" />
+    <MESSAGE value="class Main" />
+    <MESSAGE value="class WeatherController" />
+    <option name="LAST_COMMIT_MESSAGE" value="class WeatherController" />
   </component>
 </project>

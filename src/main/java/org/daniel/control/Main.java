@@ -1,9 +1,10 @@
 package org.daniel.control;
 
+import java.sql.SQLException;
 import java.util.Timer;
 
 public class Main {
-		public static void main(String[] args) {
+		public static void main(String[] args) throws SQLException {
 
 			Timer timer = new Timer();
 			long interval = 6 * 60 * 60 * 1000;
