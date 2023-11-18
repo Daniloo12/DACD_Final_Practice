@@ -24,7 +24,7 @@ Markdown served as the principal documentation tool for this project. It's a lig
 ## Design
 ### Class Diagram
 
-![Class diagram image](.png)
+![Class diagram image](DiagramaDacd1.png)
 
 First, two Plain Old Java Object classes, Weather and Location, were created to extract details from the API's JSON data and assign values to respective variables' attributes. Both clasess belong to the model layer:
 
