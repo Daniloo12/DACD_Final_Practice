@@ -20,6 +20,7 @@ public class OpenWeatherMapProvider {
 
 		this.apikey = apikey;
 	}
+
 	public List<Weather> getWeather(Location location) {
 		try {
 			String apiCall = "https://api.openweathermap.org/data/2.5/forecast" +
@@ -37,7 +38,7 @@ public class OpenWeatherMapProvider {
 
 			for (int i = 0; i < list.size(); i++) {
 				JsonObject listItem = list.get(i).getAsJsonObject();
-				String hour = String.valueOf(listItem.get("dt_txt")).substring(12,20);
+				String hour = String.valueOf(listItem.get("dt_txt")).substring(12, 20);
 				Instant ts = Instant.ofEpochSecond(list.get(i).getAsJsonObject().get("dt").getAsLong());
 				if (hour.equals("12:00:00")) {
 					double clouds = listItem.get(String.valueOf(i)).getAsJsonObject().getAsJsonObject("clouds").get("all").getAsDouble();

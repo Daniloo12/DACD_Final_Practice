@@ -33,6 +33,7 @@ public class WeatherController extends TimerTask {
 			sqLiteWeatherStore.save((Weather) weatherList);
 		}
 	}
+
 	@Override
 	public void run() {
 		try {

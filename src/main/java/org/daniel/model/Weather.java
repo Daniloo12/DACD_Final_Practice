@@ -11,7 +11,7 @@ public class Weather {
 	private double precipitation;
 	private double humidity;
 
-	public Weather(Instant ts, Location location, double clouds, double wind, double temperature, double precipitation, double humidity){
+	public Weather(Instant ts, Location location, double clouds, double wind, double temperature, double precipitation, double humidity) {
 
 		this.ts = ts;
 		this.location = location;

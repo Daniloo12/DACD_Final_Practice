@@ -1,7 +1,6 @@
 package org.daniel.control;
 
 import org.daniel.model.Weather;
-import org.daniel.model.WeatherStore;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -40,7 +39,7 @@ public class SQLiteWeatherStore implements WeatherStore {
 	}
 
 	@Override
-	public void save(Weather weather) throws SQLException {
+	public void save(Weather weather) {
 		try (Connection connection = this.open();
 			 Statement statement = connection.createStatement()) {
 			String timeStamp = weather.getTs().toString();
@@ -57,6 +56,8 @@ public class SQLiteWeatherStore implements WeatherStore {
 						island, timeStamp, weather.getTemperature(), weather.getHumidity(), weather.getPrecipitation(), weather.getWind(), weather.getClouds());
 				statement.execute(insertQuery);
 			}
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
 		}
 	}
 }
