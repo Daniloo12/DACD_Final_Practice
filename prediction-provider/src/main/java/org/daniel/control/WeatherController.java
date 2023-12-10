@@ -10,11 +10,11 @@ import java.util.TimerTask;
 
 public class WeatherController extends TimerTask {
 	private final OpenWeatherMapProvider openWeatherMapProvider;
-	private final SQLiteWeatherStore sqLiteWeatherStore;
+	private final JMSWeatherStore jmsWeatherStore;
 
-	public WeatherController(OpenWeatherMapProvider openWeatherMapProvider, SQLiteWeatherStore sqLiteWeatherStore) {
+	public WeatherController(OpenWeatherMapProvider openWeatherMapProvider, JMSWeatherStore jmsWeatherStore) {
 		this.openWeatherMapProvider = openWeatherMapProvider;
-		this.sqLiteWeatherStore = sqLiteWeatherStore;
+		this.jmsWeatherStore = jmsWeatherStore;
 	}
 
 	List<Location> locationList = List.of(
@@ -30,7 +30,7 @@ public class WeatherController extends TimerTask {
 	public void execute() throws SQLException, ParseException {
 		for (Location location : locationList) {
 			List<Weather> weatherList = openWeatherMapProvider.getWeather(location);
-			sqLiteWeatherStore.save((Weather) weatherList);
+			jmsWeatherStore.save((Weather) weatherList);
 		}
 	}
 

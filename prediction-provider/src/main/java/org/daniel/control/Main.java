@@ -9,7 +9,7 @@ public class Main {
 		Timer timer = new Timer();
 		long interval = 6 * 60 * 60 * 1000;
 
-		WeatherController weatherController = new WeatherController(new OpenWeatherMapProvider(args[0]), new SQLiteWeatherStore(args[1]));
+		WeatherController weatherController = new WeatherController(new OpenWeatherMapProvider(args[0]),new JMSWeatherStore());
 		timer.schedule(weatherController, 0, interval);
 	}
 }
