@@ -18,10 +18,6 @@ import com.google.gson.Gson;
 public class EventBuilder implements EventStore {
 	private String storageDirectory;
 
-	public void EventStore(String storageDirectory) {
-		this.storageDirectory = storageDirectory;
-	}
-
 	public EventBuilder(String storageDirectory) {
 		this.storageDirectory = storageDirectory;
 	}

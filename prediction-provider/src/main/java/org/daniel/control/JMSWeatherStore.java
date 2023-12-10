@@ -35,9 +35,7 @@ public class JMSWeatherStore implements WeatherStore {
 	}
 
 	private String serializeWeatherToJson(Weather weather) {
-		Gson gson = new GsonBuilder()
-				.registerTypeAdapter(Instant.class, new CustomInstantAdapter())
-				.create();
+		Gson gson = new GsonBuilder().registerTypeAdapter(Instant.class, new CustomInstantAdapter()).create();
 		return gson.toJson(weather);
 	}
 
@@ -47,16 +45,6 @@ public class JMSWeatherStore implements WeatherStore {
 		}
 	}
 
-	@Override
-	public void save(List<Weather> weatherPrediction) throws StoreException {
-		try {
-			establishConnection();
-			publishMessagesToTopic(weatherPrediction);
-			closeActiveConnection();
-		} catch (JMSException e) {
-			throw new StoreException(e.getMessage());
-		}
-	}
 
 	@Override
 	public void save(Weather weather) {

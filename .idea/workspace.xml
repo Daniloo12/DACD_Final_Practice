@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11115a2e-e78f-4f1f-a754-7df4f0d3fad4" name="Changes" comment="class EventBuilder">
-      <change afterPath="$PROJECT_DIR$/event-store-builder/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="11115a2e-e78f-4f1f-a754-7df4f0d3fad4" name="Changes" comment="second practice last changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-store-builder/src/main/java/org/daniel/control/EventBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/daniel/control/EventBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/JMSWeatherStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/JMSWeatherStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/WeatherStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/WeatherStore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,18 +39,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "C:/Users/lopez/Downloads/practs/p2ale",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lopez/Downloads/practs/p2ale&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lopez\IdeaProjects\dacd_practice_1\prediction-provider" />
@@ -240,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702234601840</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="second practice last changes">
+      <option name="closed" value="true" />
+      <created>1702235529209</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1702235529209</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -277,6 +286,7 @@
     <MESSAGE value="Event Store Builder Main class" />
     <MESSAGE value="class JMSSubscriber" />
     <MESSAGE value="class EventBuilder" />
-    <option name="LAST_COMMIT_MESSAGE" value="class EventBuilder" />
+    <MESSAGE value="second practice last changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="second practice last changes" />
   </component>
 </project>
