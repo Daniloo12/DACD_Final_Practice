@@ -4,27 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11115a2e-e78f-4f1f-a754-7df4f0d3fad4" name="Changes" comment="first practice corrections">
+    <list default="true" id="11115a2e-e78f-4f1f-a754-7df4f0d3fad4" name="Changes" comment="class EventBuilder">
       <change afterPath="$PROJECT_DIR$/event-store-builder/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/daniel/control/EventBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/daniel/control/EventStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/daniel/control/EventSubscriber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/daniel/control/JMSSubscriber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/daniel/control/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/daniel/exception/EventStoreBuilderException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/daniel/exception/ReceiveException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prediction-provider/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/daniel/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/daniel/control/OpenWeatherMapProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/OpenWeatherMapProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/daniel/control/SQLiteWeatherStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/SQLiteWeatherStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/daniel/control/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/WeatherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/daniel/control/WeatherProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/WeatherProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/daniel/control/WeatherStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/WeatherStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/daniel/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/model/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/daniel/model/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/model/Weather.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +152,95 @@
       <option name="project" value="LOCAL" />
       <updated>1701165342631</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="second practice first commmit">
+      <option name="closed" value="true" />
+      <created>1702215638621</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702215638621</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Store Exception">
+      <option name="closed" value="true" />
+      <created>1702217250423</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702217250423</updated>
+    </task>
+    <task id="LOCAL-00014" summary="first practice changes">
+      <option name="closed" value="true" />
+      <created>1702218909961</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702218909961</updated>
+    </task>
+    <task id="LOCAL-00015" summary="first practice changes 2">
+      <option name="closed" value="true" />
+      <created>1702219212650</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702219212650</updated>
+    </task>
+    <task id="LOCAL-00016" summary="class JMSWeatherStore">
+      <option name="closed" value="true" />
+      <created>1702221707453</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1702221707453</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Event Store Builder exceptions">
+      <option name="closed" value="true" />
+      <created>1702223316493</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1702223316493</updated>
+    </task>
+    <task id="LOCAL-00018" summary="interface EventStore">
+      <option name="closed" value="true" />
+      <created>1702223987934</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1702223987934</updated>
+    </task>
+    <task id="LOCAL-00019" summary="interface EventSubscriber">
+      <option name="closed" value="true" />
+      <created>1702224590214</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1702224590214</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Event Store Builder Main class">
+      <option name="closed" value="true" />
+      <created>1702225920581</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1702225920581</updated>
+    </task>
+    <task id="LOCAL-00021" summary="class JMSSubscriber">
+      <option name="closed" value="true" />
+      <created>1702231611588</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1702231611588</updated>
+    </task>
+    <task id="LOCAL-00022" summary="class EventBuilder">
+      <option name="closed" value="true" />
+      <created>1702234601840</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1702234601840</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +266,17 @@
     <MESSAGE value="class SQLiteWeatherStore" />
     <MESSAGE value="last changes" />
     <MESSAGE value="first practice corrections" />
-    <option name="LAST_COMMIT_MESSAGE" value="first practice corrections" />
+    <MESSAGE value="second practice first commmit" />
+    <MESSAGE value="Store Exception" />
+    <MESSAGE value="first practice changes" />
+    <MESSAGE value="first practice changes 2" />
+    <MESSAGE value="class JMSWeatherStore" />
+    <MESSAGE value="Event Store Builder exceptions" />
+    <MESSAGE value="interface EventStore" />
+    <MESSAGE value="interface EventSubscriber" />
+    <MESSAGE value="Event Store Builder Main class" />
+    <MESSAGE value="class JMSSubscriber" />
+    <MESSAGE value="class EventBuilder" />
+    <option name="LAST_COMMIT_MESSAGE" value="class EventBuilder" />
   </component>
 </project>
