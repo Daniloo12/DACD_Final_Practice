@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11115a2e-e78f-4f1f-a754-7df4f0d3fad4" name="Changes" comment="second practice last changes">
+    <list default="true" id="11115a2e-e78f-4f1f-a754-7df4f0d3fad4" name="Changes" comment="second practice last changes 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-store-builder/src/main/java/org/daniel/control/EventBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/daniel/control/EventBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/JMSWeatherStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/JMSWeatherStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/WeatherStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/prediction-provider/src/main/java/org/daniel/control/WeatherStore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +49,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lopez\IdeaProjects\dacd_practice_1" />
       <recent name="C:\Users\lopez\IdeaProjects\dacd_practice_1\prediction-provider" />
     </key>
   </component>
@@ -249,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702235529209</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="second practice last changes 2">
+      <option name="closed" value="true" />
+      <created>1702240471074</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1702240471074</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,6 +292,7 @@
     <MESSAGE value="class JMSSubscriber" />
     <MESSAGE value="class EventBuilder" />
     <MESSAGE value="second practice last changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="second practice last changes" />
+    <MESSAGE value="second practice last changes 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="second practice last changes 2" />
   </component>
 </project>

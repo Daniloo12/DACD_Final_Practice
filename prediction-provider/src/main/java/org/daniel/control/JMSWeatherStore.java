@@ -16,11 +16,15 @@ public class JMSWeatherStore implements WeatherStore {
 	private Connection connection;
 	private Session session;
 
-	private void establishConnection() throws JMSException {
+	private void establishConnection() {
 		ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(brokerUrl);
-		connection = connectionFactory.createConnection();
-		connection.start();
-		session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+		try {
+			connection = connectionFactory.createConnection();
+			connection.start();
+			session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+		} catch (JMSException e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 	private void publishMessagesToTopic(List<Weather> weatherPrediction) throws JMSException {
