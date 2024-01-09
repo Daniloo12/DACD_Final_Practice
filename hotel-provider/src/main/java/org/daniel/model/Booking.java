@@ -27,7 +27,7 @@ public class Booking {
 		return "Booking{" +
 				"ts=" + ts +
 				", ss='" + ss + '\'' +
-				", hotel=" + hotel.getTitle() +
+				", hotel=" + hotel.getName() +
 				", arrival='" + arrival + '\'' +
 				", departure='" + departure + '\'' +
 				", platformUsed='" + platformUsed + '\'' +

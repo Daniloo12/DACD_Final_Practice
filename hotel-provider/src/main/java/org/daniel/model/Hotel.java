@@ -2,13 +2,13 @@ package org.daniel.model;
 
 public class Hotel {
 	private String location;
-	private String title;
+	private String name;
 	private String identifier;
 	private String area;
 
-	public Hotel(String location, String title, String identifier, String area) {
+	public Hotel(String location, String name, String identifier, String area) {
 		this.location = location;
-		this.title = title;
+		this.name = name;
 		this.identifier = identifier;
 		this.area = area;
 	}
@@ -17,8 +17,8 @@ public class Hotel {
 		return identifier;
 	}
 
-	public String getTitle() {
-		return title;
+	public String getName() {
+		return name;
 	}
 
 	public String getLocation() {
