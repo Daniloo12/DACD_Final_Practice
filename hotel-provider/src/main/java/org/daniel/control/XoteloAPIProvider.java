@@ -62,7 +62,7 @@ public class XoteloAPIProvider implements HotelProvider {
 		LocalTime currentTime = LocalTime.now();
 		int startDay = currentTime.isAfter(LocalTime.parse("12:00:00")) ? 1 : 0;
 		for (int i = startDay; i < 5; i++) {
-			String departure = getFormattedDate(i + 1), arrival = getFormattedDate(i);
+			String departure = FormatDate(i + 1), arrival = FormatDate(i);
 			String apiUrl = "https://data.xotelo.com/api/rates?hotel_key=" + hotel.getIdentifier() + "&arrival=" + arrival + "&departure=" + departure + "&currency=EUR";
 			try {
 				Response xoteloResponse = client.newCall(new Request.Builder().url(apiUrl).get().build()).execute();
@@ -90,7 +90,7 @@ public class XoteloAPIProvider implements HotelProvider {
 		return listHotels;
 	}
 
-	private static String getFormattedDate(int daysToAdd) {
+	private static String FormatDate(int daysToAdd) {
 		return String.valueOf(LocalDate.ofInstant(Instant.now().plusSeconds(daysToAdd * 24 * 60 * 60), ZoneId.systemDefault()));
 	}
 }
