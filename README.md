@@ -1,4 +1,4 @@
-# DACD Practice 2 - Incorporation of Data into the System Architecture
+# DACD Final Project - Smart travel planning
 - **Name**: Daniel López Correas
 - **University**: Universidad de Las Palmas de Gran Canaria
 - **Building**: Escuela de Ingeniería Informática
@@ -8,11 +8,13 @@
 
 ## Functionality
 
-The system is set up to regulary gather weather details for eight distinct islands in the Canary Islands cluster over the upcoming five days. It emplays the OpenWeatherMap API to collect weather-related specifics such as temperature, chances of precipitation, humidity and cloud cover. Every six hours, the database is refreshed with the latest data, emphasizing the weather forecast for the next five days at noon daily.
+The "Smart Travel Planning" initiative merges accommodation details with meteorological forecasts for the Canary Islands.
 
-"prediction-provider" requests data from the OpenWeatherMap APi every 6 hours to obtain the weather forecast, then, it converts that data into JSON events and sends them to prediction.Weather.
+The core "Weather Provider" module sources weather predictions from the OpenWeather API, obtaining 5-day forecasts for the 8 islands. This module retrieves data every 6 hours starting at 12 p.m., transmitting updates to the "prediction.Weather" topic. Simultaneously, the "Accommodation Provider" module interfaces with the Xotelo API, fetching nightly hotel prices at 6-hour intervals and forwarding this data to the "prediction.Booking" topic.
 
-"event-store-builder" subscribe to the prediction.Weather and consume the events to store them in a directory.
+Handling data organization, the "Datamart Store Builder" module subscribes to the broker, organizing event storage in the "datalake" directory. Events are serialized into specific files within this directory, delineated by their topics and organized by date.
+
+Additionally, a user-centric "Travel Planner" module creates datamarts, combining stay options with accurate weather predictions for each island on specific days. This empowers the platform to offer diverse accommodation choices matched with precise meteorological insights to users.
 
 ## Resources used
 ### Development enviroment
@@ -23,10 +25,13 @@ Throughout the development process, the primary version control system utilized 
 The Maven Project Object Model (POM) file supplied is vital for project management. It delineates crucial project specifics such as organization, name, version and dependencies.
 ### Documentation
 Markdown served as the principal documentation tool for this project. It's a lightweight markup language known for its readibility and simplicity in both writing and comprenhension. Additionally, I've used StarUML for creating the class diagram.
+### API used
+API OpenWeatherMap: https://openweathermap.org/forecast5
+API Xotelo --> https://xotelo.com/
 
 
 ## Design
-### Wheater Provider Class Diagram
+### Prediction Provider Class Diagram
 
 ![Class diagram image](Diagrama_Weather_Provider.png)
 
@@ -43,7 +48,7 @@ Moving to the control layer:
 - WeatherController orchestrates weather data request via OpenWeatherMapProvider and manages storage in the database through SQLiteWeatherStore.
 - Main class initializes necessary objects within WeatherController and sets the application's execution frequency
 
-### Event Store Builder Class Diagram
+### Datalake Builder Class Diagram
 
 ![Class diagram image](Diagrama_Event_Store.png)
 
@@ -51,5 +56,24 @@ Moving to the control layer:
  - EventSubscriber implements Subscriber interface and process incoming messages.
  - Main class serves as the starting point of the application.
 
-## How to run the program
-To ensure the code runs smoothly, be sure to provide your API key and the database path as arguments within the Main class. Doing so will grant the program access to the essential resources and functionalities it requieres.
+### Hotel Provider Class Diagram
+
+![Class diagram image](Diagrama_Hotel_Provider.png)
+
+-HotelController: Extends TimerTask, indicating it's a task executed at regular intervals. Retrieves bookings using XoteloAPIProvider and saves them using JMSHotelStore.
+-XoteloAPIProvider (implements HotelProvider): Reads hotel information from a file. Uses an API to fetch booking prices and creates Booking objects.
+-JMSHotelStore (implements HotelStore):Handles storing bookings in a JMS (Java Message Service) system using ActiveMQ. Serializes Booking objects to JSON and sends them to a topic for storage.
+-HotelProvider (interface): Defines a getBooking() method to retrieve hotel bookings.
+-HotelStore (interface): Defines a save() method to store hotel bookings.
+-Main: Sets up and runs a controller (HotelController) as a scheduled task with a time interval using a Timer.
+
+### Travel Business Unit Class Diagram
+
+![Class diagram image](Diagrama_Travel.png)
+
+-DataHandler: Handles database operations like initialization, table creation, and data insertion. Formats date, adds weather and hotel data to their respective tables, and removes tables as needed. Utilizes a DbConnector to establish and manage database connections.
+-DbConnector: Provides a method to connect to an SQLite database using JDBC (connectDatabase()). Handles establishing connections to the specified database.
+-Main: Sets up MessageHandler instances for weather and booking prediction messages, each utilizing a DataHandler to process and manage data. Initializes the message handlers to start consuming messages.
+-ModelBuilder: Constructs Weather and Hotel objects from JSON data obtained from the messages. Parses JSON data into respective object models (buildWeatherData() and buildHotelData()).
+-MessageHandler: Manages message consumption from a specified topic via JMS. Initiates scheduled tasks to clear tables at regular intervals and processes incoming messages. Uses a DataHandler to add weather or hotel data to the database based on the message topic.
+-InfoProvider: This class interacts with users by prompting them to input a date in the format 'yyyy-MM-dd'. Displays the best hotel option to the user based on the specific date provided.
