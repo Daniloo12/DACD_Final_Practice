@@ -76,4 +76,12 @@ Moving to the control layer:
 - Main: Sets up MessageHandler instances for weather and booking prediction messages, each utilizing a DataHandler to process and manage data. Initializes the message handlers to start consuming messages.
 - ModelBuilder: Constructs Weather and Hotel objects from JSON data obtained from the messages. Parses JSON data into respective object models (buildWeatherData() and buildHotelData()).
 - MessageHandler: Manages message consumption from a specified topic via JMS. Initiates scheduled tasks to clear tables at regular intervals and processes incoming messages. Uses a DataHandler to add weather or hotel data to the database based on the message topic.
-- InfoProvider: This class interacts with users by prompting them to input a date in the format 'yyyy-MM-dd'. Displays the best hotel option to the user based on the specific date provided.
+- Interface: This class represents a command-line interface for a Travel Planner. It takes user input for island selection and dates, providing trip details using weather and booking calculators.
+- WeatherCalc: This class retrieves and categorizes weather data from an SQLite database for a specified island and date range. It generates a concise weather report for different zones, handling cases where data is unavailable or dates are invalid.
+- BookingCalc: This class fetches booking details from an SQLite database for a specified island and date range, calculating total prices based on the platform. It handles time constraints, ensuring appropriate scheduling and a maximum 5-day limit.
+
+
+
+
+
+
