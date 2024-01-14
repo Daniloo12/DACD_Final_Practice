@@ -60,20 +60,20 @@ Moving to the control layer:
 
 ![Class diagram image](Diagrama_Hotel_Provider.png)
 
--HotelController: Extends TimerTask, indicating it's a task executed at regular intervals. Retrieves bookings using XoteloAPIProvider and saves them using JMSHotelStore.
--XoteloAPIProvider (implements HotelProvider): Reads hotel information from a file. Uses an API to fetch booking prices and creates Booking objects.
--JMSHotelStore (implements HotelStore):Handles storing bookings in a JMS (Java Message Service) system using ActiveMQ. Serializes Booking objects to JSON and sends them to a topic for storage.
--HotelProvider (interface): Defines a getBooking() method to retrieve hotel bookings.
--HotelStore (interface): Defines a save() method to store hotel bookings.
--Main: Sets up and runs a controller (HotelController) as a scheduled task with a time interval using a Timer.
+- HotelController: Extends TimerTask, indicating it's a task executed at regular intervals. Retrieves bookings using XoteloAPIProvider and saves them using JMSHotelStore.
+- XoteloAPIProvider (implements HotelProvider): Reads hotel information from a file. Uses an API to fetch booking prices and creates Booking objects.
+- JMSHotelStore (implements HotelStore):Handles storing bookings in a JMS (Java Message Service) system using ActiveMQ. Serializes Booking objects to JSON and sends them to a topic for storage.
+- HotelProvider (interface): Defines a getBooking() method to retrieve hotel bookings.
+- HotelStore (interface): Defines a save() method to store hotel bookings.
+- Main: Sets up and runs a controller (HotelController) as a scheduled task with a time interval using a Timer.
 
 ### Travel Business Unit Class Diagram
 
 ![Class diagram image](Diagrama_Travel.png)
 
--DataHandler: Handles database operations like initialization, table creation, and data insertion. Formats date, adds weather and hotel data to their respective tables, and removes tables as needed. Utilizes a DbConnector to establish and manage database connections.
--DbConnector: Provides a method to connect to an SQLite database using JDBC (connectDatabase()). Handles establishing connections to the specified database.
--Main: Sets up MessageHandler instances for weather and booking prediction messages, each utilizing a DataHandler to process and manage data. Initializes the message handlers to start consuming messages.
--ModelBuilder: Constructs Weather and Hotel objects from JSON data obtained from the messages. Parses JSON data into respective object models (buildWeatherData() and buildHotelData()).
--MessageHandler: Manages message consumption from a specified topic via JMS. Initiates scheduled tasks to clear tables at regular intervals and processes incoming messages. Uses a DataHandler to add weather or hotel data to the database based on the message topic.
--InfoProvider: This class interacts with users by prompting them to input a date in the format 'yyyy-MM-dd'. Displays the best hotel option to the user based on the specific date provided.
+- DataHandler: Handles database operations like initialization, table creation, and data insertion. Formats date, adds weather and hotel data to their respective tables, and removes tables as needed. Utilizes a DbConnector to establish and manage database connections.
+- DbConnector: Provides a method to connect to an SQLite database using JDBC (connectDatabase()). Handles establishing connections to the specified database.
+- Main: Sets up MessageHandler instances for weather and booking prediction messages, each utilizing a DataHandler to process and manage data. Initializes the message handlers to start consuming messages.
+- ModelBuilder: Constructs Weather and Hotel objects from JSON data obtained from the messages. Parses JSON data into respective object models (buildWeatherData() and buildHotelData()).
+- MessageHandler: Manages message consumption from a specified topic via JMS. Initiates scheduled tasks to clear tables at regular intervals and processes incoming messages. Uses a DataHandler to add weather or hotel data to the database based on the message topic.
+- InfoProvider: This class interacts with users by prompting them to input a date in the format 'yyyy-MM-dd'. Displays the best hotel option to the user based on the specific date provided.
