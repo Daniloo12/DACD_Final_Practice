@@ -1,7 +1,9 @@
 package org.daniel.control;
 
 import org.daniel.exception.ReceiveException;
-import org.daniel.view.InfoProvider;
+import org.daniel.view.BookingCalc;
+import org.daniel.view.Interface;
+import org.daniel.view.WeatherCalc;
 
 import java.sql.SQLException;
 
@@ -12,7 +14,7 @@ public class Main {
 		messageHandler.init();
 		messageHandler2.init();
 
-		InfoProvider infoProvider = new InfoProvider();
+		new Interface(new WeatherCalc(args[0]), new BookingCalc(args[0]));
 	}
 }
 

@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11115a2e-e78f-4f1f-a754-7df4f0d3fad4" name="Changes" comment="class JMSHotelStore revision commit">
-      <change afterPath="$PROJECT_DIR$/hotel-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travel-business-unit/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travel-business-unit/src/main/java/org/daniel/model/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travel-business-unit/src/main/java/org/daniel/model/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travel-business-unit/src/main/java/org/daniel/model/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="11115a2e-e78f-4f1f-a754-7df4f0d3fad4" name="Changes" comment="full and final revision commit">
+      <change afterPath="$PROJECT_DIR$/travel-business-unit/src/main/java/org/daniel/view/BookingCalc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travel-business-unit/src/main/java/org/daniel/view/WeatherCalc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-business-unit/src/main/java/org/daniel/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/travel-business-unit/src/main/java/org/daniel/control/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-business-unit/src/main/java/org/daniel/view/InfoProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/travel-business-unit/src/main/java/org/daniel/view/Interface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +39,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "C:/Users/lopez/Downloads/flu/flu",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lopez/Downloads/flu/flu&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lopez\IdeaProjects\dacd_practice_1" />
@@ -373,7 +370,31 @@
       <option name="project" value="LOCAL" />
       <updated>1704822584594</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="class Weather revision commit">
+      <option name="closed" value="true" />
+      <created>1704826202695</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1704826202695</updated>
+    </task>
+    <task id="LOCAL-00040" summary="class Location revision commit">
+      <option name="closed" value="true" />
+      <created>1704826509583</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1704826509583</updated>
+    </task>
+    <task id="LOCAL-00041" summary="full and final revision commit">
+      <option name="closed" value="true" />
+      <created>1704841231827</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1704841231827</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -388,9 +409,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Store Exception" />
-    <MESSAGE value="first practice changes" />
-    <MESSAGE value="first practice changes 2" />
     <MESSAGE value="class JMSWeatherStore" />
     <MESSAGE value="Event Store Builder exceptions" />
     <MESSAGE value="interface EventStore" />
@@ -413,6 +431,9 @@
     <MESSAGE value="Hotels revision commit" />
     <MESSAGE value="XoteloAPIException revision commit" />
     <MESSAGE value="class JMSHotelStore revision commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="class JMSHotelStore revision commit" />
+    <MESSAGE value="class Weather revision commit" />
+    <MESSAGE value="class Location revision commit" />
+    <MESSAGE value="full and final revision commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="full and final revision commit" />
   </component>
 </project>
